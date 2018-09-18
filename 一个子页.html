@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>仿写网易云</title>
+
+<style type="text/css">
+
+ *{
+
+            margin: 0;
+
+            padding: 0
+
+        }
+
+
+
+
+
+
+.juzhong{padding-top:100px }
+.top_content{}
+.top_content img{ margin-top:13px ;
+margin-left: 150px; }
+.nav{
+	height:70px;
+width:100%;
+border:1px red solid;
+
+
+}
+
+
+.nav1{
+height:30px;
+background:red;
+margin:0;padding:0;
+
+}
+.nav_left{width:130px;
+	float:left;}
+.nav1_left{width:337px;
+	float:left;}
+.nav_mid{
+	
+	width:570px;
+	height:70px;
+	float:left;}
+.nav1_mid{width:520px;
+	height:30px;
+	float:left;}
+.nav1_right{width:480px;
+	float:left;}
+
+
+.nav_right{width:480px;
+	float:left;}
+.last{
+		
+	width:100px;
+	float:left;
+	background: url(images/tb3.jpg) no-repeat left center;	
+background-position:35px 17px;
+
+}
+
+
+
+
+.nav_mid li{margin-top: 15px;
+	        float:left;
+			list-style-type:none;
+			font-size: 15px;
+			height: 70px;
+			width:80px;
+			text-align:center;
+			line-height: 40px;
+			color:white;
+		   }
+
+
+.nav1_mid li {margin-top: 15px;
+			float:left;
+			list-style-type:none;
+			height: 40px;
+			width:80px;
+			font-size: 13px;
+			text-align:center;
+			line-height: 0px;
+			color:white;
+		   }
+
+
+.nav1_mid a:link,.nav1_mid a:visited
+{text-decoration: none;color:#ccc;
+}
+
+.nav1_mid  a:hover,.nav1_mid a:active
+{text-decoration: none;
+background-color:red;
+color:white;}
+.nav_mid a:link,.nav_mid a:visited
+{text-decoration: none;color:#ccc;
+}
+
+.nav_mid  a:hover,.nav_mid a:active
+{text-decoration: none;
+	
+
+background-color:black;}
+
+.search_text
+{width:260px;
+height:30px;
+margin-top: 20px;
+background: url(网易云图片/搜索.png) no-repeat left center;
+background-color: white;
+margin-left: 50px;
+padding-left:17px;
+border:1px solid #ccc;
+border-radius:18px;
+}
+
+.nav_right_left,.nav_right_mid
+{
+float:left;}
+
+.nav_right_mid{
+
+background-position:5px ;
+padding-left:30px;
+width:60px;
+height:50px;
+margin-top: 5px;
+margin-left: 15px;
+border:0px solid gray;
+border-radius:18px;
+}
+
+.nav_right_mid a{
+text-align:center;
+text-decoration:none;
+			line-height: 25px;
+			color:#ccc;
+			font-size:12px}
+
+
+
+#fm {
+
+
+
+ line-height: 24px;
+  list-style-type: none;
+  color:gray;
+		
+width:55px;
+height:25px;
+margin-top: 22px;
+margin-left: -70px;
+
+}
+#fm a { display: block; width: 80px; text-align:center;
+font-size:13px; color:#666; text-decoration:none; 
+ }
+
+#fm li {border:0; float: left; width: 150px;margin-top: 0px;margin-left: 40px; }
+
+#fm li ul { line-height: 27px; list-style-type: none;text-align:left;margin:0px;left :-999px; width: 80px; position: absolute;
+			 }
+
+
+
+#fm li ul li{ float: left; width: 120px; background:url(images/tb3.jpg)  repeat-x; } 
+#fm li ul a{ display: block;width: 120px;text-align:left;
+ } 
+#fm li ul a span { display: block;width: 120px;text-align:left;
+background: url(网易云图片/tb4.jpg) no-repeat left center; }
+#fm li ul a span1 { display: block;width: 120px;text-align:left;
+background: url(网易云图片/tb5.jpg) no-repeat left center; }
+#fm li ul a span2 { display: block;width: 120px;text-align:left;
+background: url(网易云图片/tb6.jpg) no-repeat left center; }
+#fm li ul a span3 { display: block;width: 120px;text-align:left;
+background: url(网易云图片/tb8.jpg) no-repeat left center; }
+
+
+#fm li ul a:link { text-decoration:none; } 
+#fm li ul a:visited { text-decoration:none; } 
+#fm li ul a:hover { text-decoration:none;font-weight:normal; background:#C00; } 
+#fm li:hover ul { left: auto; } 
+#fm li.sfhover ul { left: auto; } 
+#content { clear: left; } 
+
+
+
+
+ #container{
+
+                width:1300px;
+
+                height:336px;
+				margin-left:33px;
+                
+
+            }
+
+            #photos{
+
+                margin: 0;
+
+                position: absolute;
+
+                
+
+                width:1300px;
+
+                height:336px;
+            }
+
+
+            .#photos img{
+
+                width: 1300px;
+            
+
+            vertical-align: top
+
+                height:336px;
+
+            }
+
+
+            #photos  li{
+
+                list-style-type: none;
+
+            }
+
+            .pictures{
+
+                position: absolute;
+
+                width:100%;
+
+                height:336px;
+
+                list-style: none;
+
+            }
+
+            #arrows{
+
+                position: absolute;
+
+                width: 1250px;
+
+                height:336px;
+
+                margin-top:130px;
+
+                margin-left:30px;
+
+            }
+
+            .arrow{
+
+                font-size: 2.5em;
+
+                background-color: rgb(144,144,144,0.1);
+
+                color:white;
+
+                width:30px;
+
+                cursor: pointer;
+
+            }
+
+            #buttons{
+
+                position: absolute;
+
+                margin-top: -10px;
+
+                margin-left:560px;
+
+                z-index: 4;
+
+            }
+
+            .button{
+
+                width:6px;
+
+                height:8px;
+
+                border-radius: 3px;
+
+                background-color:grey;
+
+                float:left;
+
+                margin-right: 6px;
+
+                cursor: pointer;
+
+            }
+
+     .tu a:hover{
+text-decoration: underline;}
+
+
+.mid11 ul li{    margin-top: 10px;
+	        float:left;
+			list-style-type:none;
+			text-decoration: none;
+			
+			width:80px;
+			text-decoration: none;
+			text-align:center;
+			}
+
+.mid11 a{color:gray;
+		line-height: 40px;
+		font-size: 13px;	
+	text-decoration: none;}
+
+
+
+.mid11  a:hover,.mid11  a:active
+{text-decoration: none;
+	text-decoration: underline;
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+	<div class="nav" >
+				<div class="nav_left">
+		    		
+		     			<div class="top_content">
+		     	
+		     				<img src="images/tb1.jpg" />
+		        
+		    			 </div>
+		 			
+				</div>
+
+				<div class="nav_mid">
+					
+				</div>
+
+
+
+				<div class="nav_right">
+					<div class="nav_right_left" >
+						<form method="post" action="">
+					      
+					     <input type="text" class="search_text" placeholder="耳机" />
+					    </form>  
+				    </div>
+		            
+				    <div class="nav_right_mid" >
+
+				         <a href=" "><img src="images/tb2.jpg"></a>
+				   
+				    </div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="last"> 
+		   			
+		           <UL id=fm >
+		           		 <LI>
+			   			 	
+			   			 			<A href=" ">登录</A>
+						<UL > 
+									<li ><a href=" "><span> &nbsp; </span></a></li>		
+									<li style="position: relative; z-index:6"><a href=" "><span1> &nbsp; </span1></a></li>
+									<li style="position: relative; z-index:7"><a href=" "><span2> &nbsp; </span2></a></li>
+									<li style="position: relative; z-index:8"><a href=" "><span3> &nbsp; </span3></a></li>
+									
+						</UL>
+						</LI> 
+					</UL>
+				</div>
+	</div>
+
+
+
+
+
+	 <div id='container'>
+
+            <ul id='photos'>
+
+               <li class='pictures' ><img src='images/2.jpg'></li>
+
+                <li class='pictures' ><img src='images/3.jpg'></li>
+
+                <li class='pictures' ><img src='images/4.jpg'></li>
+
+                <li class='pictures' ><img src='images/5.jpg'></li>
+
+                <li class='pictures' ><img src='images/6.jpg'></li>
+
+                <li class='pictures' ><img src='images/7.jpg'></li>
+               <li class='pictures' ><img src='images/1.jpg'></li>
+                <div id='arrows'>
+
+                <span class='arrow' title='left'><</span>
+
+                <span class='arrow' title='right' style='float: right;'>></span>
+
+                </div>
+
+            </ul>
+
+      </div>
+
+        <div id='buttons'>
+
+                <span class='button' style='background-color: red;'></span>
+
+                <span class='button'></span>
+
+                <span class='button'></span>
+
+                <span class='button'></span>
+
+                <span class='button'></span>
+
+                <span class='button'></span>
+
+                <span class='button'></span> 
+
+        </div>
+
+
+
+
+<script>
+            var count = 0; 
+            var FI=null; 
+
+            var timer=null;
+
+            var fullBox = document.getElementById('container');
+
+            var pictures=document.getElementsByClassName('pictures');
+
+            var arrow=document.getElementsByClassName('arrow');
+
+            var button=document.getElementsByClassName('button');
+
+            var percent = 0;
+
+            function fadeIn(){
+
+                    FI = setInterval(function (){
+
+                    percent += 0.010000; 
+
+                    if(percent>=1){clearInterval(FI);}
+
+                    else{
+
+                        pictures[count].style.opacity=percent;}
+
+                    },10);
+
+                    percent = 0;}
+
+            function pic(){
+
+                for(var i=0;i<pictures.length;i++){
+
+                  pictures[i].style.opacity=0;};
+
+                fullBox.style.backgroundColor = pictures[count].id
+
+                for(var c=0;c<button.length;c++){
+
+                    button[c].style.backgroundColor = 'grey';
+
+                };
+
+                button[count].style.backgroundColor='red';    
+
+            }
+
+            
+
+            
+
+            showtime();
+
+            function showtime(){timer=setInterval(show,4000)};
+
+            function show(){
+
+                count ++;
+
+                if(count > pictures.length - 1){
+
+                count = 0;};
+
+                fadeIn();               
+
+                pic();
+
+            }
+
+            
+
+            
+
+            for(var i=0;i<arrow.length;i++){
+
+                arrow[i].onmouseover=function(){
+
+                    clearInterval(timer);
+
+                };
+
+                arrow[i].onmouseout=function(){
+
+                    showtime();
+
+                };
+
+                arrow[i].onclick=function(){
+
+                    if(this.title == 'left'){
+
+                        count--;
+
+                        if(count < 0){count = pictures.length - 1;}
+
+                    }else{
+
+                        count++;
+
+                        if(count>pictures.length - 1){count = 0;}
+
+                    };
+
+                fadeIn();
+
+                pic();
+
+                }
+
+            }
+
+            
+            for(var i=0;i<button.length;i++){
+
+                button[i].index = i;
+
+                button[i].onmouseover=function(){
+
+                    clearInterval(timer);
+
+                    count = this.index;
+
+                    fadeIn();
+
+                    pic();
+
+                };
+
+                button[i].onmouseout=function(){showtime()};
+
+                }
+
+        </script>
+
+
+<div >
+	
+	<div>
+					<a href=" "><img src="images/shuma1.jpg" alt=""></a>
+					<a href=" "><img src="images/shuma2.jpg" alt=""></a>
+					<a href=" "><img src="images/shuma3.jpg" alt=""></a>
+					<a href=" "><img src="images/shuma4.jpg" alt=""></a>
+					<a href=" "><img src="images/you1.jpg" alt=""></a>
+					<a href=" "><img src="images/you2.jpg" alt=""></a>
+	</div>
+	<div style="margin-left: 122px;font-weight: bold;font-size: 25px">编辑推荐 </div>
+
+
+	<div style="margin-top: 55px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+						<div style="margin-top: 350px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+						<div style="margin-top: 500px;">
+					<a href=" " style="margin-left: 122px;"><img src="images/shuzi1.jpg" alt=""></a>
+					<a href=" " style="margin-left: 400px;"><img src="images/shuzi2.jpg" alt=""></a>
+					
+						</div>
+
+
+
+
+						<div style="margin-left: 122px;font-weight: bold;font-size: 25px">热门商品 </div>
+
+
+						<div style="margin-top: 55px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+						<div style="margin-top: 350px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+						<div style="margin-top: 350px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+						<div style="margin-top:350px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+
+
+						<div style="margin-top: 350px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+						<div style="margin-top:350px;margin-left: 122px;">
+							<div style="float:left;height:250px;margin-left: 20px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;font-size: 14px;color: black;width:250px;" class="tu"><a>  【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji1.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div> &nbsp; &nbsp;
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+							
+						</div>
+
+
+
+
+						<div style="margin-top:350px;margin-left: 122px;">
+							<div style="float:left;height:250px;width:263px;" ><a href=""><img src="images/bianji2.jpg" alt="">
+								<div style="float:left;height:190px;width:250px;font-size: 14px;color: black;" class="tu"><a>【9.8-9.9秒杀】下单即赠茶叶礼盒·哆啦探索·哆啦A梦温暖玻璃杯</a><div class="tuu" style="color: red;">¥128 </div></div> </a></div>
+						</div>
+
+
+
+
+
+						<div style="height:100px;width:1000px;border:0px gray solid;float:left;margin-top:50px;margin-left:122px;background: url(images/guan.jpg) repeat-x;">
+									<div style="height:100px;width:490px;border:0px gray solid;float:left;margin-top:0px;">
+									<div class="mid11">
+			    		
+										<ul>
+										
+								 	    <li  style="margin-left: -10px;"><a>关于网易</a></li>
+										<li  style="margin-left: -10px;"><a href=""> 客户服务</a></li>
+										<li style="margin-left: -20px;"><a href="">服务条款</a></li>
+										<li style="margin-left: -20px;"><a href=""> 网站导航</a></li>
+										<li style="margin-left: -20px;"><a href="">意见反馈</a></li>
+										<li style="margin-left: -20px;"><a href="">电子</a></li>
+
+										</ul>
+										<br/><br/><br/>
+									<div style="font-size:13px;text-decoration: none;color:gray;float:left;">网易公司版权所有©1997-2018杭州乐读科技有限公司运营：浙网文[2018]3506-263号 违法和不良信息举报电话：0571-89853516 举报邮箱：cloudmusicservice@163.com </div>
+										
+
+
+
+									</div>
+
+								    </div>
+								    <div style="height:100px;width:480px;border:0px gray solid;float:right;margin-top:0px;">
+								    	<a href=" "><img src="images/yuan5.jpg"  /></a>
+								    	<a href=" " ><img src="images/yuan4.jpg"  /></a>
+								    	<a href=" "><img src="images/yuan3.jpg"  /></a>
+								    	<a href=" "><img src="images/yuan2.jpg"  /></a>
+								    	<a href=" "><img src="images/yuan1.jpg"  /></a>
+									</div>
+
+
+									
+
+									
+
+								</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
